@@ -26,10 +26,10 @@ let sum = 0;
 for (i = 0; i < marks.length; i++) {
     sum += marks[i];
 }
-console.log(sum)
+// console.log(sum)
 
 let avg = sum / marks.length;
-console.log(`Total sum of array is ${sum}`);
+// console.log(`Total sum of array is ${sum}`);
 
 // parctice ques 2 *********
 let item = [250, 645, 300, 900, 50];
@@ -39,4 +39,43 @@ for (let i = 0; i < item.length; i++) {
     let offer = item[i] / 10;
     item[i] = item[i] - offer;
 }
-console.log(item);
+// console.log(item);
+
+// Arrays Method 
+
+let foodItems = ["potato","apple","litchi","tomato"];
+// console.log(foodItems);
+
+foodItems.push("chips","burger","paneer");
+// console.log(foodItems);
+
+foodItems.pop("burger");
+// console.log(foodItems);
+
+// console.log(foodItems.toString())
+
+let marvelHeroes = ["Spiderman", "Thor", "Hulk", "Captain America"];
+let dcHeroes = ["Batman", "Superman", "Flash", "Green Lantern"];
+
+let heroes = marvelHeroes.concat(dcHeroes);
+// console.log(heroes);
+
+let heroes2 = heroes.slice(2, 5);
+// console.log(heroes2);
+
+console.log(heroes.shift());
+marvelHeroes.unshift("antman");
+// console.log(marvelHeroes);
+
+// practice que on array
+
+let companies =["Bloomberg","Microsoft","Uber","Google","IBM","Netflix"];
+
+// companies.shift();
+console.log(companies)
+
+companies.splice(2, 1, "Ola");
+console.log(companies);
+
+companies.push("Amazon");
+console.log(companies);
